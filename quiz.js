@@ -2,10 +2,10 @@ CarLot = ( function (carlot) {
 
   carlot.populatePage = function (inventory) {
     // Loop over the inventory and populate the page
-    console.log(inventory)
+    // console.log(inventory)
     var outputElement = document.getElementById("outputElement");
     inventory.cars.forEach( function (car) {
-      console.log(car)
+      // console.log(car)
       outputElement.innerHTML += `
         <article class="col-md-3 col-md-3-offset-1 singleCar" style="border: 10px solid ${car.color}">
         <table class="table table-striped">
@@ -23,10 +23,10 @@ CarLot = ( function (carlot) {
     })
   carlot.activateEvents = function () {
      var singleCar = document.querySelectorAll(".singleCar")
-     console.log(singleCar)
-     for (let i = 0; i < singleCar.length; i++) {
-      singleCar[i].addEventListener("click", console.log("HELLO THERE"))
-     }
+     // console.log(singleCar)
+     singleCar.forEach( function (car) {
+      car.addEventListener("click", function () {console.log("you clicked a car")})
+     })
     }
     // Now that the DOM is loaded, establish all the event listeners needed
     carlot.activateEvents();
