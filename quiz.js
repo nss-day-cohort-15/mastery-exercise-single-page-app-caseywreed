@@ -21,6 +21,13 @@ CarLot = ( function (carlot) {
       `
 
     })
+  carlot.activateEvents = function () {
+     var singleCar = document.querySelectorAll(".singleCar")
+     console.log(singleCar)
+     for (let i = 0; i < singleCar.length; i++) {
+      singleCar[i].addEventListener("click", console.log("HELLO THERE"))
+     }
+    }
     // Now that the DOM is loaded, establish all the event listeners needed
     carlot.activateEvents();
     }
