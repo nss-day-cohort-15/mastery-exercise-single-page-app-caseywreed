@@ -25,14 +25,14 @@
       "price": "23000",
       "color": "Blue",
       "purchased": false,
-      "description": "Laura's current car is a badass adventuring machine thanks to C-Pocho"
+      "description": "Laura's current car is a badass adventuring machine thanks to C-Pocho's incredible generosity"
     },
     {
       "make": "Nissan",
       "model": "Rogue",
       "year": "2006",
       "price": "8999",
-      "color": "FireBrick",
+      "color": "Purple",
       "purchased": false,
       "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
     },
@@ -41,7 +41,7 @@
       "model": "Grand Caravan",
       "year": "2007",
       "price": "100",
-      "color": "Grey",
+      "color": "Green",
       "purchased": false,
       "description": "This broken, trashed minivan transported Laura and Casey across the country multiple times"
     },
@@ -50,9 +50,9 @@
       "model": "Outback",
       "year": "2014",
       "price": "23000",
-      "color": "Blue",
+      "color": "Orange",
       "purchased": false,
-      "description": "Laura's current car is a badass adventuring machine thanks to C-Pocho"
+      "description": "Laura's current car is a badass adventuring machine thanks to C-Pocho's incredible generosity"
     }
   ]
 }
