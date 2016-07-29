@@ -10,7 +10,7 @@ var CarLot = (function () {
       inventoryLoader.open('GET', 'inventory.json')
       inventoryLoader.addEventListener("load", function () {
         inventory = JSON.parse(event.target.responseText);
-        // console.log(inventory)
+        console.log(inventory)
       })
       inventoryLoader.send();
     }

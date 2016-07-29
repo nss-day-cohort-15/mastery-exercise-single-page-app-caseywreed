@@ -1,0 +1,14 @@
+.navbar {
+  box-shadow: 2px 2px 2px 2px;
+}
+
+.carOutputDiv {
+  border: 3px solid blue;
+  min-width: 100%;
+  min-height: 500px;
+  border-radius: 2px;
+}
+
+.fullWidth {
+  width: 100%
+}
