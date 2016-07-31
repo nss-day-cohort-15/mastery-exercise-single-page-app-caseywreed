@@ -25,7 +25,8 @@ CarLot = ( function (carlot) {
      var singleCar = document.querySelectorAll(".singleCar")
      // console.log(singleCar)
      singleCar.forEach( function (car) {
-      car.addEventListener("click", function () {console.log("you clicked a car")})
+      car.addEventListener("click", carlot.selectYourCar)
+      car.addEventListener("click", function (evt) {console.log(evt)})
      })
     }
     // Now that the DOM is loaded, establish all the event listeners needed
