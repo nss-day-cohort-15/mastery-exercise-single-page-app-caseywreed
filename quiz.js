@@ -9,7 +9,7 @@ CarLot = ( function (carlot) {
     inventory.cars.forEach( function (car) {
       // console.log(car)
       outputElement.innerHTML += `
-        <article class="col-md-3 col-md-3-offset-1 singleCar" style="border: 10px solid ${car.color}">
+        <article class="col-md-3 col-md-3-offset-1 singleCar" style="border: 6px solid ${car.color}">
         <table class="table table-striped">
         <tr><td><span class="bold">Make:</span> ${car.make}</td></tr>
         <tr><td><span class="bold">Model:</span> ${car.model}</td></tr>

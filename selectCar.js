@@ -5,9 +5,11 @@ CarLot = ( function (carlot) {
     console.log(color)
     var node = car.parentNode;
     console.log(node)
-    if (car.classList.contains("singleCar")) {
+    if (car.classList.contains("singleCar") || car.classList.contains("styledCar")) {
       console.log("inside the single car node loop")
       car.classList.toggle("styledCar");
+      car.classList.toggle("singleCar");
+      car.style.borderWidth = "8px";
       // if (node.classList) {
       //   console.log("inside node loop class list section")
       //   break
