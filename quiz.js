@@ -4,6 +4,8 @@ CarLot = ( function (carlot) {
     // Loop over the inventory and populate the page
     // console.log(inventory)
     var outputElement = document.getElementById("outputElement");
+
+
     inventory.cars.forEach( function (car) {
       // console.log(car)
       outputElement.innerHTML += `
@@ -23,9 +25,15 @@ CarLot = ( function (carlot) {
     })
   carlot.activateEvents = function () {
      var singleCar = document.querySelectorAll(".singleCar")
+     var input = document.getElementById("userInput")
      // console.log(singleCar)
      singleCar.forEach( function (car) {
-      car.addEventListener("click", carlot.selectYourCar)
+      car.addEventListener("click", e => {
+        // resetCars();
+        carlot.selectYourCar(e.target, '#FFA000')
+        input.value = "";
+        input.focus();
+      })
       car.addEventListener("click", function (evt) {console.log(evt)})
      })
     }
