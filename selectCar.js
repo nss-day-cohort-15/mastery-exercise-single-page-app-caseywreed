@@ -5,15 +5,21 @@ CarLot = ( function (carlot) {
     console.log(color)
     var node = car.parentNode;
     console.log(node)
-    // while (node != null) {
-    //   console.log("inside the node loop")
-    //   if (node.classList) {
-    //     console.log("inside node loop class list section")
-    //     if (node.classList.contains("singleCar")) {
-    //       console.log("ALTER THE DAMN CAR")
-    //     }
-    //   }
-    // }
+    if (car.classList.contains("singleCar")) {
+      console.log("inside the single car node loop")
+      car.classList.toggle("styledCar");
+      // if (node.classList) {
+      //   console.log("inside node loop class list section")
+      //   break
+      //   if (node.classList.contains("singleCar")) {
+      //     console.log("ALTER THE DAMN CAR")
+      //   }
+      // }
+    }
+
+
+
+
     // while (node != null) {
     //   console.log("node is not null")
     //   // If a class exists on the current node
