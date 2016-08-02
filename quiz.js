@@ -17,7 +17,7 @@ CarLot = ( function (carlot) {
         <tr><td class="carSelectField"><span class="bold">$${car.price}</span></td></tr>
         <tr><td class="carSelectField"><span class="bold">Color:</span> ${car.color}</td></tr>
         <tr><td class="carSelectField"><span class="bold">Purchased:</span> ${car.purchased}</td></tr>
-        <tr><td class="carSelectField"><span class="bold">Description:</span> ${car.description}</td></tr>
+        <tr><td class="carSelectField"><span class="bold">Description:</span> <span class="description">${car.description}</span></td></tr>
         </table>
         </article>
       `

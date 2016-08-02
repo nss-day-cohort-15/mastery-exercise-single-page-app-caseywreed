@@ -5,6 +5,7 @@ CarLot = ( function (carlot) {
     var node = event.target.closest(".singleCar");
     node.classList.toggle("styledCar")
     node.style.borderWidth = "12px";
+    // carlot.editYourCar(node)
 
 
     function resetCars () {
@@ -17,6 +18,20 @@ CarLot = ( function (carlot) {
     }
 
   }
+
+  carlot.editYourCar = function (car) {
+    userText = document.getElementById('userInput').value;
+    selectedCar = document.querySelector('.styledCar')
+    descriptionField = document.querySelector('.description');
+    console.log(selectedCar)
+    console.log(userText)
+    console.log(descriptionField)
+    descriptionField.innerText = userText
+}
+
+document.addEventListener("keydown", carlot.editYourCar);
+document.addEventListener("keyup", carlot.editYourCar);
+
 
   return carlot
 
