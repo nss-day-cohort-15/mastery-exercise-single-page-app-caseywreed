@@ -2,25 +2,21 @@ CarLot = ( function (carlot) {
 
   carlot.selectYourCar = function (car, color) {
     resetCars();
-    // console.log(car)
-    // console.log(color)
     var node = event.target.closest(".singleCar");
     node.classList.toggle("styledCar")
+    node.style.borderWidth = "12px";
 
 
     function resetCars () {
       var cars = document.querySelectorAll(".styledCar")
-      console.log("resetCars is running")
-      console.log(cars)
       cars.forEach( function (car) {
-        console.log("removing styling")
-        car.classList.remove("styledCar")
+        console.log(car)
+        car.classList.toggle("styledCar")
+        car.style.borderWidth = "6px";
       })
     }
 
   }
-
-  // carlot.resetTheCars = function () {},
 
   return carlot
 
