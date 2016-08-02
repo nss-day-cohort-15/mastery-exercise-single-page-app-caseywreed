@@ -9,25 +9,26 @@ CarLot = ( function (carlot) {
     inventory.cars.forEach( function (car) {
       // console.log(car)
       outputElement.innerHTML += `
-        <article class="col-md-3 col-md-3-offset-1 singleCar" style="border: 6px solid ${car.color}">
-        <table class="table table-striped">
-        <tr><td><span class="bold">Make:</span> ${car.make}</td></tr>
-        <tr><td><span class="bold">Model:</span> ${car.model}</td></tr>
-        <tr><td><span class="bold">Year:</span> ${car.year}</td></tr>
-        <tr><td><span class="bold">$${car.price}</span></td></tr>
-        <tr><td><span class="bold">Color:</span> ${car.color}</td></tr>
-        <tr><td><span class="bold">Purchased:</span> ${car.purchased}</td></tr>
-        <tr><td><span class="bold">Description:</span> ${car.description}</td></tr>
+        <article class="col-md-3 col-md-3-offset-1 singleCar carSelectField" style="border: 6px solid ${car.color}">
+        <table class="table table-striped carSelectField">
+        <tr><td class="carSelectField"><span class="bold">Make:</span> ${car.make}</td></tr>
+        <tr><td class="carSelectField"><span class="bold">Model:</span> ${car.model}</td></tr>
+        <tr><td class="carSelectField"><span class="bold">Year:</span> ${car.year}</td></tr>
+        <tr><td class="carSelectField"><span class="bold">$${car.price}</span></td></tr>
+        <tr><td class="carSelectField"><span class="bold">Color:</span> ${car.color}</td></tr>
+        <tr><td class="carSelectField"><span class="bold">Purchased:</span> ${car.purchased}</td></tr>
+        <tr><td class="carSelectField"><span class="bold">Description:</span> ${car.description}</td></tr>
         </table>
         </article>
       `
 
     })
   carlot.activateEvents = function () {
-     var singleCar = document.querySelectorAll(".singleCar")
+     var singleCar = document.querySelectorAll(".carSelectField")
      var input = document.getElementById("userInput")
      // console.log(singleCar)
      singleCar.forEach( function (car) {
+      // console.log("looping through carSelectField")
       car.addEventListener("click", e => {
         // resetCars();
         carlot.selectYourCar(e.target, '#FFA000')

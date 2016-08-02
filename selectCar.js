@@ -1,40 +1,22 @@
 CarLot = ( function (carlot) {
 
   carlot.selectYourCar = function (car, color) {
+    // resetCars();
     console.log(car)
-    console.log(color)
-    var node = car.parentNode;
-    console.log(node)
-    if (car.classList.contains("singleCar") || car.classList.contains("styledCar")) {
-      console.log("inside the single car node loop")
-      car.classList.toggle("styledCar");
-      car.classList.toggle("singleCar");
-      car.style.borderWidth = "8px";
-      // if (node.classList) {
-      //   console.log("inside node loop class list section")
-      //   break
-      //   if (node.classList.contains("singleCar")) {
-      //     console.log("ALTER THE DAMN CAR")
-      //   }
-      // }
-    }
+    // console.log(color)
+    var node = event.target.closest(".singleCar");
+    node.classList.toggle("styledCar")
 
 
-
-
-    // while (node != null) {
-    //   console.log("node is not null")
-    //   // If a class exists on the current node
-    //   if (node.classList) {
-    //     // Traversed to a 'car'
-    //     if (node.classList.contains('singleCar')) {
-    //       console.log("inside the SINGLECAR node loop")
-    //       node.style.border = '6px solid';
-    //       node.style.backgroundColor = color;
-    //       break;
-    //     }
-    //   }
+    // function resetCars () {
+    //   var cars = document.querySelectorAll(".singleCar")
+    //   console.log("resetCars is running")
+    //   console.log(cars)
+    //   cars.forEach( e => {
+    //     car.classList.remove("styledCar")
+    //   })
     // }
+
   }
 
   // carlot.resetTheCars = function () {},
