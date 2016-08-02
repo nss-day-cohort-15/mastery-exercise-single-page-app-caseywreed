@@ -35,7 +35,7 @@ CarLot = ( function (carlot) {
         input.value = "";
         input.focus();
       })
-      car.addEventListener("click", function (evt) {console.log(evt)})
+      // car.addEventListener("click", function (evt) {console.log(evt)})
      })
     }
     // Now that the DOM is loaded, establish all the event listeners needed
