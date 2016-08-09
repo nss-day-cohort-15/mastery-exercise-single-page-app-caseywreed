@@ -35,8 +35,9 @@ CarLot = ( function (carlot) {
     carlot.activateEvents();
     }
 
-carlot.loadInventory(carlot.populatePage)
-
   return carlot
 
 }(CarLot));
+
+
+CarLot.loadInventory(CarLot.populatePage)

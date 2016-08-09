@@ -20,6 +20,4 @@ var CarLot = (function () {
     },
   }; //END OF RETURN
 
-
-
 })();
